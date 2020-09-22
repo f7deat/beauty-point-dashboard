@@ -1,0 +1,42 @@
+@import 'varible.scss';
+
+.bg-primary {
+    background-color: $primary-color !important;
+}
+
+.date {
+    padding: 3px 6px;
+    font-weight: 500;
+    display: flex;
+}
+
+.searchBar {
+    background-color: #f6f6f6;
+    border: none;
+    padding: 1.3rem .75rem;
+    border-radius: 6px;
+    margin-right: 2rem;
+    &:focus {
+        background-color: #f6f6f6;
+    }
+}
+
+.search-icon {
+    border: none;
+    background-color: #f6f6f6;
+}
+
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+  box-shadow: none;
+}

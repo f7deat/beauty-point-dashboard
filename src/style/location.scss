@@ -1,0 +1,12 @@
+@import 'varible.scss';
+
+.location-panel {
+    background-color: #FFF;
+    padding: 11px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid transparent;
+    &:hover {
+        border: 1px solid $primary-color;
+    }
+}

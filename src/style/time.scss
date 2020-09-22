@@ -1,0 +1,13 @@
+.time-panel {
+    padding: 8px 20px;
+    .date {
+        cursor: pointer;
+    }
+    .day {
+        position: absolute;
+        top: -1.875rem;
+        color: gray;
+        font-size: small;
+    }
+}
+

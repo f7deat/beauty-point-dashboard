@@ -1,7 +1,14 @@
+@import 'varible.scss';
+
 .time-panel {
     padding: 8px 20px;
     .date {
         cursor: pointer;
+        &:hover {
+            background-color: $primary-color;
+            color: #fff;
+            border-radius: 50%;
+        }
     }
     .day {
         position: absolute;

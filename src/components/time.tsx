@@ -39,7 +39,7 @@ export default class TimePanel extends React.Component {
         return (
             <div className="shadow-sm bg-white d-flex justify-content-between time-panel">
                 {
-                    this.listDate(10).map(value => {
+                    this.listDate(7).map(value => {
                         return (
                             <div className="date" key={value.id}>
                                 <div className="day">{value.day}</div>
@@ -48,6 +48,9 @@ export default class TimePanel extends React.Component {
                         )
                     })
                 }
+                <div className="date">
+                    <i className="fas fa-calendar-alt"></i>
+                </div>
             </div>
         )
     }

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/beauty-point-dashboard/static/css/main.ab4c12c7.chunk.css",
+    "main.js": "/beauty-point-dashboard/static/js/main.df6189a1.chunk.js",
+    "main.js.map": "/beauty-point-dashboard/static/js/main.df6189a1.chunk.js.map",
+    "runtime-main.js": "/beauty-point-dashboard/static/js/runtime-main.e426ef21.js",
+    "runtime-main.js.map": "/beauty-point-dashboard/static/js/runtime-main.e426ef21.js.map",
+    "static/js/2.2815f8ec.chunk.js": "/beauty-point-dashboard/static/js/2.2815f8ec.chunk.js",
+    "static/js/2.2815f8ec.chunk.js.map": "/beauty-point-dashboard/static/js/2.2815f8ec.chunk.js.map",
+    "index.html": "/beauty-point-dashboard/index.html",
+    "precache-manifest.028397329ea8bc48222817cc95480d30.js": "/beauty-point-dashboard/precache-manifest.028397329ea8bc48222817cc95480d30.js",
+    "service-worker.js": "/beauty-point-dashboard/service-worker.js",
+    "static/css/main.ab4c12c7.chunk.css.map": "/beauty-point-dashboard/static/css/main.ab4c12c7.chunk.css.map",
+    "static/js/2.2815f8ec.chunk.js.LICENSE.txt": "/beauty-point-dashboard/static/js/2.2815f8ec.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e426ef21.js",
+    "static/js/2.2815f8ec.chunk.js",
+    "static/css/main.ab4c12c7.chunk.css",
+    "static/js/main.df6189a1.chunk.js"
+  ]
+}

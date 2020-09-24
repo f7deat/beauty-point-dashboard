@@ -1,0 +1,12 @@
+.tap-task {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: #ffffff;
+    min-height: 98px;
+    &:hover {
+        background-color: #f8f4ff;
+        opacity: 0.67;
+        border: 1px solid #CFB0FF;
+        border-radius: 5px;
+    }
+}

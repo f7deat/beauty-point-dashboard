@@ -11,10 +11,10 @@ function App() {
     <div className="App">
       <Navbar />
       <div className="text-right p-4">
-        <button className="btn btn-light shadow-sm mr-3">
+        <button className="btn btn-light shadow-sm btn-control-global">
           SCHEDULE
         </button>
-        <button className="btn btn-light shadow-sm">
+        <button className="btn btn-light shadow-sm btn-control-global">
           SELL GOODS
         </button>
       </div>
@@ -31,7 +31,7 @@ function App() {
           <div className="col-md-2">
             <Employee/>
           </div>
-          <div className="col-md-8">
+          <div className="col-md-10">
             <Content/>
           </div>
         </div>

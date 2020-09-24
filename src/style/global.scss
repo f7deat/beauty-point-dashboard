@@ -41,6 +41,11 @@ input[type=number]:focus,
   box-shadow: none;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: #000000;
+    opacity: 0.76;
+}
+
 .nav-link {
     font-weight: 500;
 }
@@ -49,9 +54,63 @@ input[type=number]:focus,
     color: $primary-color;
 }
 
+.employee-avatar-image {
+    border-radius: 50%;
+}
+
+img {
+    transition-duration: 0.3s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.cursor-poiter {
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+.form-control {
+    background-color: #F1F1F1;
+    border-radius: 3px;
+    border: 1px solid #F1F1F1;
+}
+label {
+    font-size: 12px;
+    color: #000000;
+    opacity: 0.4;
+}
+
+.btn {
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(121, 139, 149, 0.440274);
+    border-radius: 3px;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    box-shadow: 0px 1px 4px rgba(94, 48, 165, 0.367782);
+    border: 1px solid $primary-color;
+    &:hover {
+        background-color: #6a2ec5;
+        border: 1px solid #6a2ec5;
+    }
+}
+
 @media (min-width: 992px) {
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
 }
 }
+
+@media (max-width: 992px) {
+    .btn-control-global {
+        width: 100%;;
+    }
+    }

@@ -3,11 +3,8 @@ import React from 'react';
 function HourPanel() {
     return (
         <div className="row text-center">
-            <div className="col-1">
-                9:00
-            </div>
-            <div className="col-1">
-                10:00
+            <div className="col-2">
+                
             </div>
             <div className="col-1">
                 11:00

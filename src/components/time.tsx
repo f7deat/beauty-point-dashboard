@@ -1,30 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import WorkDay from '../models/workDay';
 import '../style/location.scss';
+import 'react-calendar/dist/Calendar.css';
 import '../style/time.scss';
+import Calendar from 'react-calendar';
 
-export default class TimePanel extends React.Component {
+export default function () {
 
-    listDate(pageSize: number): WorkDay[] {
+    function listDate(pageSize: number): WorkDay[] {
         let newDate = new Date();
         let date = newDate.getDate();
+        let dayIndex = 0;
+        let dayOfWeek = 0;
         let listDate: WorkDay[] = [];
         for (let index = 0; index < pageSize; index++) {
             const item = date + index;
             let day = 'Thứ 2';
-            let newDay = newDate.getDay() + index;
-            if(newDay === 2) {
+            dayOfWeek = newDate.getDay() + dayIndex;
+            if (dayOfWeek === 2) {
                 day = 'Thứ 3'
-            } else if(newDay === 3) {
+            } else if (dayOfWeek === 3) {
                 day = 'Thứ 4'
-            } else if(newDay === 4) {
+            } else if (dayOfWeek === 4) {
                 day = 'Thứ 5'
-            } else if(newDay === 5) {
+            } else if (dayOfWeek === 5) {
                 day = 'Thứ 6'
-            } else if(newDay === 6) {
+            } else if (dayOfWeek === 6) {
                 day = 'Thứ 7'
-            } else if(newDay === 7) {
+            } else if (dayOfWeek === 7) {
                 day = 'Chủ nhật'
+            }
+            if (dayOfWeek < 7) {
+                dayIndex++;
+            } else {
+                dayIndex = 1 - newDate.getDay();
             }
             let work: WorkDay = {
                 id: index,
@@ -35,24 +44,30 @@ export default class TimePanel extends React.Component {
         }
         return listDate;
     }
-    render() {
-        return (
-            <div className="shadow-sm bg-white d-flex justify-content-between time-panel">
-                {
-                    this.listDate(7).map(value => {
-                        return (
-                            <div className="date" key={value.id}>
-                                <div className="day">{value.day}</div>
-                                {value.date}
-                            </div>
-                        )
-                    })
+    const [classDisplayCalendar, setClassDisplayCalendar] = useState("d-none")
+    return (
+        <div className="shadow-sm bg-white d-flex justify-content-between time-panel rounded">
+            {
+                listDate(7).map(value => {
+                    return (
+                        <div className="date" key={value.id}>
+                            <div className="day">{value.day}</div>
+                            {value.date}
+                        </div>
+                    )
+                })
+            }
+            <div className="date" onClick={() => {
+                if(classDisplayCalendar) {
+                    setClassDisplayCalendar("")
+                } else {
+                    setClassDisplayCalendar("d-none")
                 }
-                <div className="date">
-                    <i className="fas fa-calendar-alt"></i>
-                </div>
+            }}>
+                <i className="fas fa-calendar-alt"></i>
+                <div style={{ position: 'absolute', zIndex: 3, right: 0, top: 40}} className={classDisplayCalendar}><Calendar /></div>
             </div>
-        )
-    }
+        </div>
+    )
 
 }

@@ -4,12 +4,6 @@
     background-color: $primary-color !important;
 }
 
-.date {
-    padding: 3px 6px;
-    font-weight: 500;
-    display: flex;
-}
-
 .searchBar {
     background-color: #f6f6f6;
     border: none;
@@ -113,4 +107,8 @@ label {
     .btn-control-global {
         width: 100%;;
     }
+    }
+
+    .employee {
+        cursor: move;
     }

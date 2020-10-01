@@ -1,3 +1,5 @@
+@import 'varible.scss';
+
 .tap-task {
     padding: 0.5rem 1rem;
     cursor: pointer;
@@ -8,5 +10,39 @@
         opacity: 0.67;
         border: 1px solid #CFB0FF;
         border-radius: 5px;
+    }
+}
+
+.payment {
+    background-color: #ffffff;
+    padding: 0;
+    display: flex;
+    border-radius: 4px;
+    border: 1px solid #e1e1e1;
+    .btn-pay {
+        background-color: $success-color;
+        padding: 6px 20px;
+        border: none;
+        color: #ffffff;
+        font-weight: 500;
+        border-radius: 0 4px 4px 0;
+        &:hover {
+            background-color: green;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    .btn-payed {
+        background-color: #ccc;
+        padding: 6px 20px;
+        border: none;
+        color: #ffffff;
+        font-weight: 500;
+        border-radius: 0 4px 4px 0;
+    }
+    .pay-time {
+        padding: 6px 20px;
+        flex-grow: 1;
     }
 }

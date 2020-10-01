@@ -1,18 +1,19 @@
 import React from 'react';
+import Employee from '../interfaces/employee';
 
-function EmployeeCard() {
+interface PropTypes {
+    employee: Employee
+}
+
+function EmployeeCard(props: PropTypes) {
     return (
-        <div className="p-4 bg-white d-flex shadow-sm">
+        <div className="p-4 bg-white d-flex shadow-sm mb-4 rounded employee" key={props.employee.id}>
             <div className="employee-avatar">
-                <img src="http://placehold.jp/071829/ffffff/50x50.png?text=Avatar" alt="avatar" className="employee-avatar-image"/>
+                <img src={props.employee.avatar} alt="avatar" className="employee-avatar-image" />
             </div>
             <div className="employee-info ml-3">
-                <div className="employee-name font-weight-bold text-truncate">
-                    Faadi Al Rahman
-                </div>
-                <div className="text-muted">
-                    Specialist
-                </div>
+                <div className="employee-name font-weight-bold text-truncate">{props.employee.name}</div>
+                <div className="text-muted">{props.employee.role}</div>
             </div>
         </div>
     )

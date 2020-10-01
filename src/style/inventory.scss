@@ -1,0 +1,37 @@
+.inventory-item {
+    padding: 8px 12px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 11px rgba(56, 62, 68, 0.0862772);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    .inventory-name {
+        padding: 4px;
+    }
+    .inventory-item-icon {
+        background: radial-gradient(66% 66% at 50% 56%, #FFe7DB 0%, #f8c3a7 100%);
+        border-radius: 50%;
+        color: #ffffff;
+        padding: 8px;
+        display: flex;
+        margin-right: 9px;
+    }
+    .count-item {
+        padding: 6px 10px;
+        background-color: #F1F1F1;
+        border-radius: 50%;
+        display: flex;
+        color: #7A7A7A;
+        cursor: pointer;
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+    }
+    .trash-icon {
+        padding: 2px 8px;
+        cursor: pointer;
+        color: #a5a1a1;
+    }
+}

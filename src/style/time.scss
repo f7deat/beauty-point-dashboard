@@ -1,13 +1,13 @@
 @import 'varible.scss';
 
 .time-panel {
-    padding: 8px 20px;
+    padding: 0 20px;
     .date {
+        padding: 8px 16px;
+        font-weight: bold;
         cursor: pointer;
         &:hover {
             background-color: $primary-color;
-            color: #fff;
-            border-radius: 50%;
         }
     }
     .day {
@@ -18,3 +18,30 @@
     }
 }
 
+.react-calendar {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 11px rgba(56, 62, 68, 0.0862772);
+}
+
+.react-calendar__tile--now, .react-calendar__tile--now:hover {
+    background-color: $primary-color;
+    color: #fff;
+}
+
+.react-calendar__tile {
+    padding: 1rem 0.5em;
+    border-radius: 50%;
+}
+
+.now-border {
+    border-right: 1px solid #F05252;
+    height: 800px;
+    position: fixed;
+    width: 50%;
+    left: 0;
+}
+
+.now {
+    position: relative;
+}

@@ -2,7 +2,6 @@ import React from 'react';
 import LocationPanel from './components/location';
 import TimePanel from './components/time';
 import Content from './layout/content';
-import Employee from './layout/employee';
 import Navbar from './layout/navbar';
 import './style/global.scss';
 
@@ -21,20 +20,13 @@ function App() {
       <div className="p-4">
         <div className="row">
           <div className="col-md-2">
-            <LocationPanel/>
+            <LocationPanel />
           </div>
           <div className="col-md-10">
-            <TimePanel/>
+            <TimePanel />
           </div>
         </div>
-        <div className="row">
-          <div className="col-md-2">
-            <Employee/>
-          </div>
-          <div className="col-md-10">
-            <Content/>
-          </div>
-        </div>
+        <Content />
       </div>
     </div>
   );

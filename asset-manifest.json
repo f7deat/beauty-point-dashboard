@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/beauty-point-dashboard/static/css/main.dac7b7e1.chunk.css",
-    "main.js": "/beauty-point-dashboard/static/js/main.4114c9b3.chunk.js",
-    "main.js.map": "/beauty-point-dashboard/static/js/main.4114c9b3.chunk.js.map",
+    "main.css": "/beauty-point-dashboard/static/css/main.66c73e8d.chunk.css",
+    "main.js": "/beauty-point-dashboard/static/js/main.99ffc325.chunk.js",
+    "main.js.map": "/beauty-point-dashboard/static/js/main.99ffc325.chunk.js.map",
     "runtime-main.js": "/beauty-point-dashboard/static/js/runtime-main.e426ef21.js",
     "runtime-main.js.map": "/beauty-point-dashboard/static/js/runtime-main.e426ef21.js.map",
-    "static/js/2.6bbd118b.chunk.js": "/beauty-point-dashboard/static/js/2.6bbd118b.chunk.js",
-    "static/js/2.6bbd118b.chunk.js.map": "/beauty-point-dashboard/static/js/2.6bbd118b.chunk.js.map",
+    "static/js/2.e6d00652.chunk.js": "/beauty-point-dashboard/static/js/2.e6d00652.chunk.js",
+    "static/js/2.e6d00652.chunk.js.map": "/beauty-point-dashboard/static/js/2.e6d00652.chunk.js.map",
     "index.html": "/beauty-point-dashboard/index.html",
-    "precache-manifest.cc03876080fed29e75ab4222dcc2fc16.js": "/beauty-point-dashboard/precache-manifest.cc03876080fed29e75ab4222dcc2fc16.js",
+    "precache-manifest.f4f3f7c0866e819564c176e303927177.js": "/beauty-point-dashboard/precache-manifest.f4f3f7c0866e819564c176e303927177.js",
     "service-worker.js": "/beauty-point-dashboard/service-worker.js",
-    "static/css/main.dac7b7e1.chunk.css.map": "/beauty-point-dashboard/static/css/main.dac7b7e1.chunk.css.map",
-    "static/js/2.6bbd118b.chunk.js.LICENSE.txt": "/beauty-point-dashboard/static/js/2.6bbd118b.chunk.js.LICENSE.txt"
+    "static/css/main.66c73e8d.chunk.css.map": "/beauty-point-dashboard/static/css/main.66c73e8d.chunk.css.map",
+    "static/js/2.e6d00652.chunk.js.LICENSE.txt": "/beauty-point-dashboard/static/js/2.e6d00652.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e426ef21.js",
-    "static/js/2.6bbd118b.chunk.js",
-    "static/css/main.dac7b7e1.chunk.css",
-    "static/js/main.4114c9b3.chunk.js"
+    "static/js/2.e6d00652.chunk.js",
+    "static/css/main.66c73e8d.chunk.css",
+    "static/js/main.99ffc325.chunk.js"
   ]
 }

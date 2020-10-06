@@ -36,7 +36,7 @@ export default function TaskBar() {
                 employees.map(x => {
                     return (
 
-                        <div className="row mb-4">
+                        <div className="row mb-4" key={x.id}>
                             <div className="col-md-2">
                                 <EmployeeCard employee={x} />
                             </div>

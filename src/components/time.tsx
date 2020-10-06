@@ -46,7 +46,7 @@ export default function () {
     }
     const [classDisplayCalendar, setClassDisplayCalendar] = useState("d-none")
     return (
-        <div className="shadow-sm bg-white d-flex justify-content-between time-panel rounded">
+        <div className="shadow-sm bg-white justify-content-between time-panel rounded d-none d-md-flex">
             {
                 listDate(7).map(value => {
                     return (

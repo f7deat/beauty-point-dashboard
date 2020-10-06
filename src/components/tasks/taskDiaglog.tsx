@@ -14,7 +14,7 @@ export default function TaskDialog(props: any) {
     }
 
     return (
-        <div className={props.isShow ? "modal fade show d-block" : "modal fade d-none"} tabIndex={1} aria-hidden="true" style={{backgroundColor: '#00000052'}}>
+        <div className={props.isShow ? "modal fade show d-block" : "modal fade d-none"} tabIndex={1} aria-hidden="true" style={{ backgroundColor: '#00000052' }}>
             <div className="modal-dialog modal-xl modal-dialog-centered">
                 <div className="modal-content border-0 bg-light shadow">
                     <div className="modal-body p-0">
@@ -29,13 +29,14 @@ export default function TaskDialog(props: any) {
                                     <button className="btn btn-block mb-3" type="button">CLIENT CARD</button>
                                     <label>Comments</label>
                                     <textarea className="form-control mb-4"></textarea>
-                                    <div className="d-flex justify-content-around">
+                                    <div className="d-flex justify-content-between">
                                         <button className="btn btn-primary" onClick={() => handleSave()}>
                                             Save
                                             </button>
-                                        <button className="btn">
+                                        <button className="btn d-flex align-items-center">
                                             Status
-                                            </button>
+                                            <i className="fas fa-angle-down ml-2"></i>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -47,7 +48,7 @@ export default function TaskDialog(props: any) {
                                         </button>
                                         <div className="h5 font-weight-bold mb-4">Services</div>
                                         <div className="mb-3">
-                                            <Inventory inventories={inventory} setInventory={setInventory}/>
+                                            <Inventory inventories={inventory} setInventory={setInventory} />
                                         </div>
                                         <div className="mb-4 d-flex align-items-center position-relative">
                                             <button onClick={() => setOpenService(true)} className="rounded-circle mr-2 d-flex align-items-center justify-content-center" style={{ border: '1px solid #d1d1d1', backgroundColor: '#fff', padding: 6, fontSize: 12 }}><i className="fas fa-plus"></i></button>

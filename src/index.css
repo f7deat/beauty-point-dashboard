@@ -12,17 +12,12 @@ code {
     monospace;
 }
 
-.btn-light {
-  background-color: #fff;
-}
-
 .btn {
   font-weight: bold;
   padding-left: 3rem;
   padding-right: 3rem;
 }
 
-.btn-light:hover {
+.btn:hover {
   border: 1px solid #8d43ff;
-  background-color: #fff;
 }

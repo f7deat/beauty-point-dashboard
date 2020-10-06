@@ -2,7 +2,7 @@ import React from 'react';
 
 function HourPanel() {
     return (
-        <div className="row text-center">
+        <div className="row text-center d-none d-md-flex">
             <div className="col-2">
                 
             </div>

@@ -39,7 +39,9 @@ function Navbar() {
                         </li>
                     </ul>
                 </div>
-                <div className="user">Account</div>
+                <div className="user">
+                    <img src="http://placehold.jp/071829/ffffff/30x30.png?text=Avatar" alt="avatar" style={{borderRadius: '50%', cursor: 'pointer'}}/>
+                </div>
             </div>
         </nav>
     );

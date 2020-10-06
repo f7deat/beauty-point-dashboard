@@ -10,10 +10,10 @@ function App() {
     <div className="App">
       <Navbar />
       <div className="text-right p-4">
-        <button className="btn btn-light shadow-sm btn-control-global">
+        <button className="btn shadow-sm btn-control-global">
           SCHEDULE
         </button>
-        <button className="btn btn-light shadow-sm btn-control-global">
+        <button className="btn shadow-sm btn-control-global">
           SELL GOODS
         </button>
       </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import LocationPanel from './components/location';
-import TimePanel from './components/time';
+import Timeline from './components/time';
 import Content from './layout/content';
 import Navbar from './layout/navbar';
 import './style/global.scss';
@@ -23,7 +23,7 @@ function App() {
             <LocationPanel />
           </div>
           <div className="col-md-10">
-            <TimePanel />
+            <Timeline />
           </div>
         </div>
         <Content />

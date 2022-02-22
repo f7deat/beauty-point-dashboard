@@ -10,7 +10,13 @@
         height: 40px;
         font-weight: bold;
         cursor: pointer;
+        transition: all 0.3s linear;
         &:hover {
+            background-color: $primary-color;
+            border-radius: 50%;
+            color: white;
+        }
+        &.active {
             background-color: $primary-color;
             border-radius: 50%;
             color: white;
